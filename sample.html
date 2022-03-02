@@ -48,28 +48,57 @@
             </div>
         </div>
     </div>
-    <h1>form 태그 연습(p.134)</h1>
-    <form name="samle_order">
-        <div class="user_inputs">
-            <div class="name_field">
-                <label for="user_name">이름</label>
-                <input type="text" id="user_name" name="user_name">
-            </div>
-            <div class="email_field">
-                <label for="user_email">이메일</label>
-                <input type="email" id="user_email" name="user_email">
-            </div>
-            <div class="sns_field">
-                <label for="user_sns">sns 주소</label>
-                <input type="url" id="user_sns" name="user_sns">
-            </div>
-            <div class="addr_field">
-                <label for="user_addr">주소</label>
-                <input type="text" id="user_addr" name="user_addr">
-            </div>
-        </div>
 
-    </form>
+    <section id="main" class="subpage">
+        <h2>sample</h2>
+        <h3>무료샘플신청</h3>
+        <div class="article-wrap">
+            <article>
+                <h2 class="d-none">신청서 - 사용자 입력부분</h2>
+                <form name="sample-form">
+                    <div class="form-wrap">
+                        <h3>■신청서</h3>
+                        <div class="user-form">
+                            <ul>
+                                <li>
+                                    <label for="userName">이름</label>
+                                    <input type="text" id="userName" name="userName" maxlength="20" placeholder="ex) gildong hong">
+                                </li>
+                                <li>   
+                                    <label for="userEmail">이메일</label>
+                                    <input type="text" id="userEmail" name="userEmail" placeholder="abcd@google.com">
+                                </li>
+                                <li>
+                                    <label for="userSns">sns주소</label>
+                                    <input type="text" id="userSns" name="userSns" placeholder="instagram, facebook, naverblog">
+                                </li>
+                                <li>
+                                    <label for="userAddress1">주소</label>
+                                    <input type="text" id="userAddress1" name="userAddress1" placeholder="1. press search button">
+                                    <input type="button" id="searchAddress" onclick="address_find()" value="검색">
+                                    <input type="text" id="userAddress2" name="userAddress2" placeholder="2. type another address">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="agreement-form">
+                            <h3>■개인정보수집 &middot; 이용동의</h3>
+                               <div class="agreement">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam cum temporibus deleniti neque quibusdam unde veniam, veritatis incidunt eveniet ratione! Deleniti mollitia praesentium vel voluptate eum molestiae id. Sapiente, soluta?</div>
+                               <label for="userAgreement">동의합니다</label>
+                               <input type="checkbox" id="userAgreement" name="userAgreemet">
+                           
+                        </div>
+                        <div class="btns">
+                            <input type="submit" value="신청">
+                            <input type="reset" value="취소">
+                        </div>
+
+                    </div>
+                </form>
+            </article>
+        </div>
+    </section>
+   
+
     <footer>
         <h2 class="d-none">다모애 웹사이트 저작권 및 연락처, 주소 정보</h2>
         <div class="footer-wrap">
@@ -95,5 +124,10 @@
             </div>
         </div>
     </footer>
+<script>
+    function address_find(){
+        alert("DB 점검으로 인해 해당 서비스 이용이 불가해~")
+    }
+</script>
 </body>
 </html>
