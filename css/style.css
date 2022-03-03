@@ -37,6 +37,51 @@ body{
     font-family: 'Maven Pro', 'Noto Sans KR', sans-serif;
     background-image: url("../images/bg.png");
 }
+/* modal */
+#modal.show{
+    display: block;
+}
+#modal{
+    position: fixed;
+    z-index: 2000;
+    background: rgba(0, 0, 0, .3);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.modal-wrap{
+    position: absolute;
+    background: white;
+    width: 1000px;
+    height: 600px;
+    left: 50%;
+    top: 50%;
+    margin-left: -500px;
+    margin-top: -300px;
+}
+.close-modal{
+    cursor: pointer;
+    font-size: 2rem;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    background: grey;
+    padding: 0 10px;
+}
+.modal-title{
+    border-left: 2px solid #666;
+    padding-left: 30px;
+    margin: 50px 0 0 50px;
+}
+.modal-title h3{
+    font-size: 64px;
+}
+.modal-title h4 {
+    font-size: 36px;
+    color: #666
+}
+
 /* side-banner */
 .side-banner{
     position: fixed;
