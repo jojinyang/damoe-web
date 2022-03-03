@@ -6,5 +6,5 @@
 
 ## 진행단계
 * 요구분석
-* 설계
+* 설계[figma]:https://www.figma.com/file/any4Ap3okXmjkTfVs5cNCC/damoe-sample-order?node-id=0%3A1 "UXUI설계"
 * 구현
