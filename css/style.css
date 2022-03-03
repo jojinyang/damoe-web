@@ -246,9 +246,55 @@ body{
     height: 100px;
     padding: 50px;
     background: white;
-    overflow: scroll;
+    overflow: hidden scroll;
+}
+.agreement-check{
+    margin: 20px 0 50px;
 }
 
+
+input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+input[type=checkbox] + label{
+    font-size: 1rem;
+}
+
+.btns{
+    text-align: center;
+}
+.btns input[type=submit]{
+    background: #0075ff;
+    color: #ddd;
+    width: 250px;
+    height: 70px;
+    font-size: 1rem;
+    border: 0ch;
+    margin-right: 10px ;
+    border-radius: 30px;
+}
+.btns input[type=reset]{
+    background: #ffffff;
+    color: #ccc;
+    width: 250px;
+    height: 70px;
+    font-size: 1rem;
+    border: 1px solid #666;
+    border-radius: 30px;  
+}
+
+.btns input[type=submit]:hover {
+        background: #000;
+        color: white;
+}
+.btns input[type=reset]:hover {
+        background: #000;
+        color: white;
+}
 /* .aside-wrap */
 
 .outer-wrap{
@@ -296,6 +342,9 @@ body{
 }
 .etc li{
     display: inline-block;
+}
+address{
+    font-style: normal;
 }
 address p{
     display: inline-block;
