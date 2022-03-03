@@ -37,6 +37,12 @@ body{
     font-family: 'Maven Pro', 'Noto Sans KR', sans-serif;
     background-image: url("../images/bg.png");
 }
+/* side-banner */
+.side-banner{
+    position: fixed;
+    right: 5%;
+    top: 10%;
+}
 /* header */
 .header-wrap{
     width: 1000px;
